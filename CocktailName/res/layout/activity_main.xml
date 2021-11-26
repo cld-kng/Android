@@ -1,0 +1,69 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+
+      <ImageView 
+android:layout_width="fill_parent" android:layout_height="fill_parent"
+android:src="@drawable/background" android:scaleType="fitXY" />
+      
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:gravity="left"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00"
+        android:orientation="horizontal" >
+
+        <NumberPicker
+            android:id="@+id/letterPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="0.50" />
+
+        <NumberPicker
+            android:id="@+id/monthPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="0.50" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_cocktail_name"
+ 		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="start"
+		android:orientation="horizontal" >
+
+        <TextView
+			android:id="@+id/letterName"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:singleLine="true"
+		    android:textSize="@dimen/text_size_cocktail"/>
+      
+
+        <TextView
+            android:id="@+id/monthName"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+     		android:singleLine="true"
+     		android:textSize="@dimen/text_size_cocktail"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cocktailImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="Cocktail" />
+
+</LinearLayout>
+</FrameLayout>

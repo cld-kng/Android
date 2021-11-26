@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:tools="http://schemas.android.com/tools"
+ android:id="@+id/LinearLayout"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ android:layout_margin="@dimen/padding"
+    tools:context="com.poly.diceroll.DiceActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+ <LinearLayout 
+   android:layout_width="match_parent"
+   android:layout_height="83dp"
+   android:orientation="horizontal" >
+
+
+    <ImageView
+ 	android:contentDescription="@string/Image_view"
+ 	android:id="@+id/dice_image_one"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitStart"
+        android:layout_weight="1"
+        android:layout_gravity="start" />
+    <ImageView
+        android:contentDescription="@string/Image_view"
+        android:id="@+id/dice_image_two"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitStart"
+        android:layout_weight="1"
+        android:layout_gravity="end" />
+
+</LinearLayout>
+
+    <TextView
+    android:id="@+id/textIntroduction"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/padding"
+    android:text="@string/Introduction"
+    android:textSize="@dimen/text_size" />
+
+    <EditText
+        android:id="@+id/userNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/roll_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="rollDice"
+        android:paddingBottom="@dimen/padding"
+        android:paddingTop="@dimen/padding"
+        android:text="@string/button_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding"
+        android:textSize="@dimen/text_size"
+        android:id="@+id/textResult"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding"
+        android:textSize="@dimen/text_size"
+        android:id="@+id/textResultMsg"
+        android:layout_gravity="center_horizontal" />
+    
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding"
+        android:textSize="@dimen/text_size2"
+        android:id="@+id/textDiceHistory"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
